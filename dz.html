@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <ul class="nav nav-tabs" id="product">
+      <li class="nav-item">
+        <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description"  >Создание товара</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="characteristics-tab" data-toggle="tab" href="#characteristics" >Создание категории товаров</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="opinion-tab" data-toggle="tab" href="#opinion" >Создание заказа</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " id="send-tab" data-toggle="tab" href="#send"  >Отправка сообщения по емейлу</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " id="sms-tab" data-toggle="tab" href="#sms"  >Отправка СМС сообщения</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="description">
+      <form class="needs-validation " novalidate>  
+      <input type="text" class="form-control" placeholder="Название товара"  aria-describedby="basic-addon1"  minlength="2" required>
+              <div class="valid-feedback">
+                  Все верно.
+                </div>
+              <div class="invalid-feedback">
+                  Не может быть меньше 2 символов.
+                </div>
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Описание"  aria-describedby="basic-addon1" required>
+                  <div class="valid-feedback">
+                      Все верно.
+                </div>
+                  <div class="invalid-feedback">
+                      Не может быть пустым.
+                  </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Материал"  aria-describedby="basic-addon1" min="13" required>
+                <div class="valid-feedback">
+                    Все верно.
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  категории
+                  <div class="input-group mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option  selected>Для дома</option>
+                        <option value="1">Для машины</option>
+                        <option value="2">Уход за огородом</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Страна произвотства"  aria-describedby="basic-addon1" min="13" required>
+                  <div class="valid-feedback">
+                      Все верно.
+                    </div>
+                    <div class="invalid-feedback">
+                      Не может быть пустым.
+                    </div>
+                </div>   
+                <input type="submit" class="btn btn-outline-info" value="Отправить"> 
+            </form>
+      </div>
+      <div class="tab-pane fade" id="characteristics">
+        <form class="needs-validation " novalidate>  
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Название категории"  aria-describedby="basic-addon1" min="1" required>
+            <div class="valid-feedback">
+                Все верно.
+              </div>
+              <div class="invalid-feedback">
+                Не может быть пустым.
+              </div>
+          </div>   
+          <input type="submit" class="btn btn-outline-info" value="Отправить"> 
+                </form>
+      </div>
+      <div class="tab-pane fade" id="opinion">
+        <form class="needs-validation " novalidate>  
+          <input type="text" class="form-control" placeholder="Название товара"  aria-describedby="basic-addon1"  minlength="2" required>
+                  <div class="valid-feedback">
+                      Все верно.
+                  </div>
+                  <div class="invalid-feedback">
+                      Не может быть меньше 2 символов.
+                  </div>
+                  <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Выбери цвет"  aria-describedby="basic-addon1" required>
+                  </div>
+                  <div class="valid-feedback"
+                          Все верно.
+                  </div>
+                      <div class="invalid-feedback">
+                          Не может быть пустым.
+                      </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Выбери Материал"  aria-describedby="basic-addon1" min="13" required>
+                    <div class="valid-feedback">
+                        Все верно.
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      Выбери категорию
+                      <div class="input-group mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option  selected>Для дома</option>
+                            <option value="1">Для машины</option>
+                            <option value="2">Уход за огородом</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Оставте Отзывы"  aria-describedby="basic-addon1"  >
+                    </div>   
+                    <input type="submit" class="btn btn-outline-info" value="Отправить"> 
+                </form>
+      </div>
+      <div class="tab-pane fade" id="send">
+        <form class="needs-validation " novalidate>  
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Ваш Email"  aria-describedby="basic-addon1" min="1" required>
+            <div class="valid-feedback">
+                Все верно.
+              </div>
+              <div class="invalid-feedback">
+                Должен иметь @.
+              </div>
+              <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Напишите сообщение"  aria-describedby="basic-addon1" min="1" >
+              <div class="valid-feedback">
+                  Все верно.
+                </div>
+              </div>    
+          </div>   
+          <input type="submit" class="btn btn-outline-info" value="Отправить"> 
+                </form>
+      </div>
+      <div class="tab-pane fade" id="sms">
+        <form class="needs-validation " novalidate>  
+          <div class="input-group mb-3">
+            <div class="form-group">
+              <label class="control-label col-sm-2">Номер телефона:</label>
+              <div class="col-sm-10">          
+              <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" value="" required >
+            </div>
+            </div>
+            <div class="valid-feedback">
+                Все верно.
+              </div>
+              <div class="invalid-feedback">
+                Не может быть пустым.
+              </div>
+              <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Напишите сообщение"  aria-describedby="basic-addon1" min="1"  required>
+              <div class="valid-feedback">
+                  Все верно.
+                </div>
+              </div>      
+          <input type="submit" class="btn btn-outline-info" value="Отправить"> 
+                </form>
+
+      </div>
+    </div>
+    
+    <script>
+(function () {
+  'use strict'
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+          
+        }
+        
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>  </body>
+  </body>
+    </html>
